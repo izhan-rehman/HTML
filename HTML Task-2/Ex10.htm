@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            font-weight: bold;
+        }
+        hr {
+            margin-bottom: 10px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+        input[type="text"], input[type="email"] {
+            width: 200px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .radio-group {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Please Fill And Submit Form :</h2>
+    <hr>
+
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <div class="radio-group">
+            <p>Select A color you like :</p>
+            <br>
+            <input type="radio" id="red" name="color" value="Red">
+            <label for="red">Red</label><br>
+            
+            <input type="radio" id="green" name="color" value="Green">
+            <label for="green">Green</label><br>
+            
+            <input type="radio" id="blue" name="color" value="Blue">
+            <label for="blue">Blue</label><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

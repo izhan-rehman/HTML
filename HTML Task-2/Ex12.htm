@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex12</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h2 {
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        hr {
+            width: 50%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 10px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        input[type="text"], input[type="email"], select {
+            width: 200px;
+            padding: 5px;
+        }
+        .radio-group, .checkbox-group {
+            margin-top: 10px;
+        }
+        .radio-group label, .checkbox-group label {
+            font-weight: normal;
+        }
+        input[type="submit"] {
+            padding: 7px 15px;
+            cursor: pointer;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Please Fill And Submit Form :</h2>
+    <hr>
+
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="radio-group">
+            <p>Select A color you like :</p><br>
+            <input type="radio" id="red" name="color" value="Red">
+            <label for="red">Red</label><br>
+            
+            <input type="radio" id="green" name="color" value="Green">
+            <label for="green">Green</label><br>
+            
+            <input type="radio" id="blue" name="color" value="Blue">
+            <label for="blue">Blue</label><br>
+        </div>
+
+        <div class="form-group">
+            <label for="favoriteColor">Select your favorite color:</label>
+            <select id="favoriteColor" name="favoriteColor">
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Yellow">Yellow</option>
+            </select>
+        </div>
+
+        <div class="checkbox-group">
+            <p>Choose your skill level:</p><br>
+            <input type="checkbox" id="beginner" name="skill" value="Beginner">
+            <label for="beginner">Beginner</label><br>
+
+            <input type="checkbox" id="intermediate" name="skill" value="Intermediate">
+            <label for="intermediate">Intermediate</label><br>
+
+            <input type="checkbox" id="advanced" name="skill" value="Advanced">
+            <label for="advanced">Advanced</label><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
