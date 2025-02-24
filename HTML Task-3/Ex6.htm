@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3b82f6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+        }
+        main {
+            flex: 3;
+            margin-right: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header a {
+            text-decoration: none;
+            color: #3b82f6;
+        }
+        .hero img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .blog-post {
+            margin-top: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .blog-post h2 {
+            color: #6b21a8;
+            margin: 0;
+        }
+        .blog-post p {
+            color: #333;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #fde047;
+            padding: 10px;
+            height: fit-content;
+        }
+        .sidebar h3 {
+            margin: 0 0 10px 0;
+        }
+        .sidebar a {
+            color: #d97706;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <header>
+                <h1>My Awesome Blog</h1>
+                <nav>
+                    <a href="#">Home</a> | <a href="#">About</a>
+                </nav>
+            </header>
+            <div class="hero">
+                <img src="https://th.bing.com/th/id/OIP.mapTcKqxgs3SOuX5mn4FCQHaBx?rs=1&pid=ImgDetMain" alt="Blog Banner">
+            </div>
+            <div class="blog-post">
+                <h2>Title of the first blog</h2>
+                <p><strong>By Aziz Ali</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue commodo neque, nec laoreet leo consequat id...</p>
+            </div>
+            <div class="blog-post">
+                <h2>Title of the first blog</h2>
+                <p><strong>By Aziz Ali</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue commodo neque, nec laoreet leo consequat id...</p>
+            </div>
+        </main>
+        <aside class="sidebar">
+            <h3>Useful Links</h3>
+            <a href="https://AzizAli.com">AzizAli.com</a>
+            <a href="https://iLoveCoding.org">iLoveCoding.org</a>
+        </aside>
+    </div>
+</body>
+</html>

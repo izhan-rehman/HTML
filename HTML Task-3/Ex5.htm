@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #a0a0a0;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+    
+        }
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        .main-content img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .main-content h2 {
+            font-size: 22px;
+            margin-top: 0;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 15px;
+        }
+
+        .sidebar h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .sidebar ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Kitten Kare
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+    </nav>
+    <div class="container">
+        <section class="main-content">
+            <h2>Welcome!</h2>
+            <img src="https://th.bing.com/th/id/OIP.VSY5NYWzPoG0myx7NWxynQHaEo?w=850&h=531&rs=1&pid=ImgDetMain" alt="A bear standing in water">
+            <p>
+                The domestic cat[1][2] (Felis catus[2] or Felis silvestris catus[4], informally Felis domesticus[6][7]) is a small, usually furry, domesticated, carnivorous mammal. It is often called the housecat when kept as an indoor pet,[8] or simply the cat when there is no need to distinguish it from other felids and felines. Cats are valued by humans for companionship and ability to hunt vermin and household pests. They are primarily nocturnal.[9]
+            </p>
+        </section>
+
+
+        <aside class="sidebar">
+            <h3>Cat Body Types</h3>
+            <ul>
+                <li>Oriental</li>
+                <li>Foreign</li>
+                <li>Semi-Foreign</li>
+                <li>Semi-Cobby</li>
+                <li>Cobby</li>
+            </ul>
+        </aside>
+    </div>
+
+</body>
+</html>

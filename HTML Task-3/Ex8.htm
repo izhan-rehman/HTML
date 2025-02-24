@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 10px;
+        }
+        .section-header {
+            background-color: #9ab7d0;
+            color: #003366;
+            padding: 5px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        td {
+            font-weight: 500;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .text-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        .image-content {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .dog-image {
+            max-width: 100%;
+            height: auto;
+        }
+        .listener-row {
+            background-color: #f2f2f2;
+            font-style: italic;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-content">
+            <div class="section-header">Courses</div>
+            <p>Here are some courses I've taken:</p>
+            
+            <table>
+                <tr>
+                    <th>Course Number</th>
+                    <th>Course Title</th>
+                    <th>Semester Taken</th>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align: center; font-weight: bold;">For Credit</td>
+                </tr>
+                <tr>
+                    <td  style="color: #003366;">6.813</td>
+                    <td>User Interface Design</td>
+                    <td>Spring 2014</td>
+                </tr>
+                <tr>
+                    <td  style="color: #003366;">6.034</td>
+                    <td>Artificial Intelligence</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <td  style="color: #003366;">6.006</td>
+                    <td>Introduction to Algorithms</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr class="listener-row">
+                    <td colspan="3" style="text-align: center; font-weight: bold;" >Listener</td>
+                </tr>
+                <tr>
+                    <td>6.867</td>
+                    <td>Machine Learning</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <td>6.830</td>
+                    <td>Database Systems</td>
+                    <td>Fall 2012</td>
+                </tr>
+            </table>
+            
+            <div class="section-header">Interests</div>
+            <p>I am interested in <strong>HCL</strong>, memes, and youtube videos.</p>
+        </div>
+        
+        <div class="image-content">
+            <img src="https://img.freepik.com/premium-photo/dog-dressed-as-renowned-scientist-complete-with-tiny-lab-coat-tiny-glasses-conducting-experiments-with-miniature-beakers-test-tubes_850000-33309.jpg" alt="Dog with glasses at microphone" class="dog-image">
+        </div>
+    </div>
+</body>
+</html>

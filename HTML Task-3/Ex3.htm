@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Register Here</h2><hr>
+
+    <h3>Please Fill And Submit Form:</h3>
+
+    <form>
+        <div class="form-group">
+            <label>Name:</label>
+            <input type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Age:</label>
+            <input type="number" placeholder="Enter your age" required>
+        </div>
+
+        <div class="form-group">
+            <label>Date of birth:</label>
+            <input type="date" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number:</label>
+            <select>
+                <option>Select your Code</option>
+                <option value="+1">+1 (USA)</option>
+                <option value="+91">+91 (India)</option>
+                <option value="+44">+44 (UK)</option>
+            </select>
+            <input type="tel" placeholder="Enter your Phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label>Select your gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Choose your skill level:</label>
+            <div class="radio-group">
+                <input type="radio" name="skill" value="beginner"> Beginner
+                <input type="radio" name="skill" value="intermediate"> Intermediate
+                <input type="radio" name="skill" value="advanced"> Advanced
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Select your favorite color:</label>
+            <input type="color">
+        </div>
+
+        <div class="form-group">
+            <label>Father Name:</label>
+            <input type="text" placeholder="Enter your Father Name">
+        </div>
+
+        <div class="form-group">
+            <label>Choose your language:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="language" value="Tamil"> Tamil
+                <input type="checkbox" name="language" value="English"> English
+                <input type="checkbox" name="language" value="Malayalam"> Malayalam
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Hobbies:</label>
+            <textarea placeholder="Enter your hobbies"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Address:</label>
+            <textarea placeholder="Enter your address"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
